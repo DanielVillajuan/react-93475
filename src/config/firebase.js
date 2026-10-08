@@ -7,12 +7,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA0OdzqijbSveEvfC6Q5yOsPTph5ld99ZM",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "ecomouse-e943d.firebaseapp.com",
   projectId: "ecomouse-e943d",
   storageBucket: "ecomouse-e943d.firebasestorage.app",
-  messagingSenderId: "9377638661",
-  appId: "1:9377638661:web:90aa9e4a2a91f0311daf6c"
+  messagingSenderId: import.meta.env.VITE_FIREBASE_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID
 };
 
 // Initialize Firebase
